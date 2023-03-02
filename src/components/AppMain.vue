@@ -13,7 +13,7 @@ export default{
     data() {
         return {
             apiUrl: 'http://127.0.0.1:8000/api/projects',
-            projectsList: [],
+            projects: [],
         }
     },
 
@@ -24,8 +24,8 @@ export default{
                 }
             })
             .then((response) => {
-                this.projectsList = response.data.results.data;
-                console.log(this.projectsList);
+                this.projects = response.data.results.data;
+                console.log(this.projects);
             })
             .catch(function (error) {
                 console.warn(error);
@@ -50,9 +50,11 @@ export default{
                 </div>
             </div>
             <div class="row">
-                <div class="col-4 g-3">
-                    <ProjectCard />
-                </div>
+                <ProjectCard v-for="project in projects"
+                :projectTitle="project.title"
+                :projectImage="project.thumb"
+                :projectType="project.type.name"
+                :projectTechnologies="project.technologies"/>
             </div>
         </div>
     </section>
