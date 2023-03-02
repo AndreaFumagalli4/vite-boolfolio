@@ -45,7 +45,7 @@ export default{
             <div class="row">
                 <div class="col-12">
                     <h1>
-                        Projects
+                        Projects:
                     </h1>
                 </div>
             </div>
@@ -60,6 +60,6 @@ export default{
     </section>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 
 </style>

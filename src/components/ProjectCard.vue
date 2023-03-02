@@ -21,20 +21,24 @@ export default {
                 </p>
             </div>
             <div class="card-body">
-                <h3>
+                <h3 class="mb-3">
                     {{ projectTitle }}
                 </h3>
-                <div class="mt-4">
+                <div class="mb-3">
                     <span v-for="technology in projectTechnologies">
                         #{{ technology.name }}
                     </span>
                 </div>
-                <img :src="projectImage" alt="Project image">
+                <div class="card-image">
+                    <img :src="projectImage" alt="Project image" class="img-fluid">
+                </div>
             </div>
         </div>
     </article>
 </template>
 
-<style lang="scss">
-    
+<style scoped lang="scss">
+    p{
+        margin: 0;
+    }
 </style>
