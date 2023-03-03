@@ -6,10 +6,12 @@ export default {
 </script>
 
 <template>
-    <div>
-        <h2>
-            Projects list
-        </h2>
+    <div class="container">
+        <div class="row">
+            <h2>
+                Projects list
+            </h2>
+        </div>
     </div>
 </template>
 

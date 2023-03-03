@@ -1,14 +1,16 @@
 <script>
 export default {
-    name: 'HomaPage',
+    name: 'HomePage',
 }
 </script>
 
 <template>
-    <div>
-        <h2>
-            Homapage
-        </h2>
+    <div class="container">
+        <div class="row">
+            <h2>
+                Homepage
+            </h2>
+        </div>
     </div>
 </template>
 

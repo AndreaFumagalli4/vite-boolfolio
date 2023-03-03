@@ -6,7 +6,7 @@ import AboutUs from './pages/AboutUs.vue';
 
 const router = createRouter({
     history: createWebHistory(),
-    router: [
+    routes: [
         {
             path: '/',
             name: 'home',

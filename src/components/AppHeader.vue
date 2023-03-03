@@ -15,13 +15,19 @@ export default{
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <router-link :to="{ name: 'home' }" class="nav-link active" aria-current="page">
+                            Home
+                        </router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <router-link :to="{ name: 'projects' }" class="nav-link">
+                            Projects
+                        </router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About-us</a>
+                        <router-link :to="{ name: 'about-us' }" class="nav-link">
+                            About-us
+                        </router-link>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
