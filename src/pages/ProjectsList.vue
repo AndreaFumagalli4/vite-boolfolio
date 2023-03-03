@@ -1,27 +1,6 @@
 <script>
-
-export default {
-    name: 'ProjectsList',
-}
-</script>
-
-<template>
-    <div class="container">
-        <div class="row">
-            <h2>
-                Projects list
-            </h2>
-        </div>
-    </div>
-</template>
-
-<style scoped lang="scss">
-    
-</style>
-
-<!-- <script>
 import axios from 'axios';
-import ProjectCard from './ProjectCard.vue';
+import ProjectCard from '../components/ProjectCard.vue';
 
 export default{
     name: 'AppMain',
@@ -83,4 +62,4 @@ export default{
 
 <style scoped lang="scss">
 
-</style> -->
+</style>
