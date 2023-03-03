@@ -1,8 +1,11 @@
 <script>
+import ProjectsList from '../pages/ProjectsList.vue';
+
 export default {
     name: 'ProjectCard',
 
     props: {
+        projectId: Number,
         projectTitle: String,
         projectImage: String,
         projectType: String,
@@ -29,9 +32,12 @@ export default {
                         #{{ technology.name }}
                     </span>
                 </div>
-                <div class="card-image">
+                <div class="card-image mb-3">
                     <img :src="projectImage" alt="Project image" class="img-fluid">
                 </div>
+                <router-link :to="{name: 'single-project', params: {id: projectId } }" class="btn btn-primary">
+                    More info
+                </router-link>
             </div>
         </div>
     </article>

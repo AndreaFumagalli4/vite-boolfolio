@@ -51,6 +51,7 @@ export default{
             </div>
             <div class="row">
                 <ProjectCard v-for="project in projects"
+                :projectId="project.id"
                 :projectTitle="project.title"
                 :projectImage="project.thumb"
                 :projectType="project.type.name"
