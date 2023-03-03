@@ -23,4 +23,6 @@ const router = createRouter({
             component: AboutUs
         },
     ]
-})
+});
+
+export { router };
