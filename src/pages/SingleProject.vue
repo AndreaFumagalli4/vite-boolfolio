@@ -23,7 +23,7 @@ export default {
                 }
             })
             .then((response) => {
-                this.project = response.data.results.data;
+                this.project = response.data.results;
                 console.log(this.project);
             })
             .catch(function (error) {
@@ -38,7 +38,7 @@ export default {
 }
 </script>
 
-<template lang="">
+<template>
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -48,7 +48,7 @@ export default {
             </div>
         </div>
         <div class="row">
-            <ProjectCard :project="project" />
+            <ProjectCard :projectId="this.$route.params.id" />
         </div>
     </div>
 </template>
