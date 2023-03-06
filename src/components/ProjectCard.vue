@@ -1,5 +1,4 @@
 <script>
-import ProjectsList from '../pages/ProjectsList.vue';
 
 export default {
     name: 'ProjectCard',
